@@ -1,0 +1,139 @@
+.sos-banner{
+    background-image: url(../img/banner-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 264px 0 684px 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    @media #{$big_screen}{
+       padding: 240px 0 280px 0;
+    }
+    @media #{$tab_device}{
+       padding: 240px 0 300px 0;
+    }
+    @media #{$large_mobile}{
+       padding: 200px 0 300px 0;
+    }
+    @media #{$small_mobile}{
+        padding: 175px 0 360px 0;
+       background-position: center right;
+    }
+    @media #{$x_small_mobile}{
+       padding-top: 160px;
+       padding-bottom: 340px;
+       background-position: center right;
+    }
+    ul{
+        li{
+            display: inline-block;
+            z-index: -1;
+            animation: round 7s infinite;
+            transition-timing-function: linear;
+            background-color: $white;
+        }
+        .round-1{
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            bottom: 0;
+            left: 50px;
+            animation-delay: 1s;
+            animation-direction: 17s;
+        }
+        .round-2{
+            position: absolute;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            bottom: 0;
+            left: 45%;
+            animation-delay: 2s;
+            animation-direction: 17s;
+        }
+        .round-3{
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            bottom: 0;
+            left:70%;
+            animation-delay: 4s;
+            animation-direction: 13s;
+        }
+        .round-4{
+            position: absolute;
+            height: 17px;
+            width: 17px;
+            border-radius: 50%;
+            bottom: 0;
+            right: 50%;
+            animation-delay: 1s;
+            animation-direction: 22s;
+        }
+        .round-5{
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            bottom: 0;
+            right: 10%;
+        }
+        .round-6{
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            bottom: 0;
+            right:70%;
+            animation-delay: 2s;
+            animation-direction: 10s;
+        }
+        .round-7{
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 2px solid $white;
+            bottom: 0;
+            right:30%;
+            transform: translate(-30%);
+            animation-delay: 1s;
+            animation-direction: 5s;
+        }
+        .round-8{
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 2px solid $white;
+            bottom: 0;
+            left:10%;
+        }
+        
+    }
+   
+}
+.sos-banner-sub-hadding{
+    letter-spacing: 9px;
+    line-height: 1.6;
+    @media #{$tab_device}{
+        letter-spacing: 3px;
+    }
+    @media #{$large_mobile}{
+        letter-spacing: 2px;
+    }
+    @media #{$small_mobile}{
+        letter-spacing: 2px;
+    }
+    @media #{$x_small_mobile}{
+        letter-spacing: 1px;
+    }
+}
+.sos-banner-hadding{
+    line-height: 1.3;
+}

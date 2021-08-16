@@ -1,0 +1,143 @@
+.sos-footer{
+    background-image: url(../img/footer-bg.png);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-top: 320px;
+    padding-bottom: 400px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    @media #{$big_screen}{
+        padding: 200px 0 290px 0;
+    }
+    @media #{$medium_device}{
+        padding: 60px 0 300px 0;
+    }
+    @media #{$tab_device}{
+        padding: 0px 0 300px 0;
+    }
+    @media #{$large_mobile}{
+        padding: 100px 0 300px 0;
+    }
+    @media #{$small_mobile}{
+        padding: 100px 0 300px 0;
+    }
+    @media #{$x_small_mobile}{
+        padding: 100px 0 235px 0;
+    }
+    ul{
+        li{
+            display: inline-block;
+            z-index: -1;
+            animation: round 7s infinite;
+            transition-timing-function: linear;
+            background-color: $white;
+        }
+        .round-1{
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            bottom: 0;
+            left: 50px;
+            animation-delay: 1s;
+            animation-direction: 5s;
+        }
+        .round-2{
+            position: absolute;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            bottom: 0;
+            left: 45%;
+            animation-delay: 2s;
+            animation-direction: 13s;
+        }
+        .round-3{
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            bottom: 0;
+            left:70%;
+            animation-delay: 4s;
+            animation-direction: 17s;
+        }
+        .round-4{
+            position: absolute;
+            height: 17px;
+            width: 17px;
+            border-radius: 50%;
+            bottom: 0;
+            right: 50%;
+            animation-delay: 5s;
+            animation-direction: 22s;
+        }
+        .round-5{
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            bottom: 0;
+            right: 10%;
+        }
+        .round-6{
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            bottom: 0;
+            right:70%;
+            animation-delay: 3s;
+            animation-direction: 7s;
+        }
+        .round-7{
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 2px solid $white;
+            bottom: 0;
+            right:30%;
+            transform: translate(-30%);
+            animation-delay: 1s;
+            animation-direction: 3s;
+        }
+        .round-8{
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 2px solid $white;
+            bottom: 0;
+            left:10%;
+        }
+        
+    }
+}
+.footer-content{
+    .footer-hadding{
+        @media #{$x_small_mobile}{
+            font-size: 28px;
+        }
+    }
+    .footer-sub-hadding{
+        font-size: 40px;
+        margin: 20px 0px 40px;
+        color: $black;
+        @media #{$large_mobile}{
+            font-size: 30px;
+            line-height: 40px;
+        }
+        @media #{$small_mobile}{
+            font-size: 30px;
+            line-height: 40px;
+        }
+        @media #{$x_small_mobile}{
+            font-size: 18px;
+        }
+    }
+}
